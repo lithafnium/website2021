@@ -127,7 +127,7 @@ export const Content = styled.div`
   }
   @media ${device.tabletL} {
     padding: 16px 5px;
-    margin-left: 2em;
+    margin: 0px 0px 0px 2em;
   }
 `;
 
