@@ -1,0 +1,40 @@
+# workflows/website-linting.yml
+#
+# Website: Check PR
+# Checks a website PR for linting and building success.
+
+name: "Website: Check PR"
+
+on:
+  pull_request:
+    branches:
+      - main
+      - staging
+      - dev
+  workflow_dispatch:
+
+jobs:
+  # Linting
+  # Checks for formatting using ESlint.
+  website-linting-check-pr-linting:
+    name: Linting
+    runs-on: ubuntu-20.04
+
+    env:
+      CI: true
+      NPM_TOKEN: ${{ secrets.GHA_PERSONAL_ACCESS_TOKEN }}
+
+    steps:
+      - name: Check out Git Repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js 14
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 14
+
+      - name: Run npm install
+        run: npm install
+
+      - name: Check if code follows ESLint standards
+        run: npm run lint-check

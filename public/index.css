@@ -1,0 +1,17 @@
+/* Add CSS styles here! */
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&family=Poppins&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css");
+
+/* body {
+  margin: 0px !important;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+} */
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px !important;
+  /*	background-color: rgb(10, 25, 47)
+*/
+}
