@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Navbar,
-  Input,
-  Button,
-  FadeIn,
-  SlideIn,
-} from "@app/shared/components/index";
-import { colors } from "@app/styles/styles";
+import { FadeIn } from "@app/shared/components/index";
 import {
   Container,
   ContainerInner,
@@ -15,14 +8,8 @@ import {
   Paragraph,
   Links,
 } from "./styles";
-import Phone from "@app/assets/message.svg";
-// import Eating from '@app/assets/eating.svg'
-// import Plan from '@app/assets/plan.svg'
-// import Swipe from '@app/assets/swipe.svg'
+
 const Home = () => {
-  /**
-   * TODO: Create inputs, rows with content
-   */
   return (
     <FadeIn>
       <Container>
