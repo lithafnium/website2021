@@ -1,3 +1,5 @@
+import styled from "styled-components";
+
 export const colors = {
   PRIMARY: "#FD8440",
   SECONDARY: "#3E533C",
@@ -14,3 +16,13 @@ export const fonts = {
   // PRIMARY: '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;',
   // SECONDARY: "'Poppins', sans-serif",
 };
+
+export const Bold = styled.span`
+  font-weight: 600;
+  color: ${colors.HIGHLIGHT};
+`;
+
+export const Link = styled.a`
+  text-decoration: none;
+  color: ${colors.HIGHLIGHT};
+`;

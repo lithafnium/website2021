@@ -19,7 +19,7 @@ export const PROJECTS = [
             75% accuracy. Model training and predictions are stored in a \
             distributed task queue and picked up asynchronously by Celery \
             workers. Redis serves as both a message broker and result store \
-            for the queue. Made in collaboration with Jeremy Hsu",
+            for the queue. Made in collaboration with Jeremy Hsu.",
     techStack: [
       "Python",
       "Flask",
@@ -44,13 +44,17 @@ export const PROJECTS = [
   {
     title: "Text Summarizer",
     description:
-      "Uses an open source Python summarizing (Sumy) library and webscraping to \
-                 allow users to summarize chunks of text, online articles, scanned papers, \
-                 or even online videos. Ultimately, users will be able to choose from \
-                 different types of outputs as well: text, pdf, dynamic, video, infographic, etc.\
-                Written with Flask Backend (Hosting on AWS Elastic Beanstalk and implementation of \
-                  AWS Cognito to be implemented), React frontend.",
-    techStack: ["Python", "AWS Elastic Beanstalk", "AWS Cognito", "React"],
+      "Uses open source Python summarizing (Sumy) library and webscraping to create \
+      dynamic summaries of text, online articles, and scanned papers, with support for different \
+      types of output and input files. Written with Flask Backend, hosted on AWS Elastic Beanstalk, \
+      and React.js, hosted using Amplify with AWS Cognito user authentication.",
+    techStack: [
+      "Python",
+      "AWS Elastic Beanstalk",
+      "AWS Cognito",
+      "AWS Amplify",
+      "React",
+    ],
   },
   {
     title: "Personal website 2019",

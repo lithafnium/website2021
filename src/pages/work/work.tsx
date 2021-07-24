@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { colors } from "@app/styles/styles";
+import { Bold, Link, colors } from "@app/styles/styles";
 import { FadeIn } from "@app/shared/components/fade";
 import {
   Container,
@@ -39,9 +39,12 @@ const Work = () => {
                 <FadeIn>
                   <h3>
                     {DESCRIPTIONS[index].role}{" "}
-                    <span style={{ color: colors.HIGHLIGHT }}>
-                      @ {COMPANIES[index]}
-                    </span>
+                    <Bold>
+                      @{" "}
+                      <Link href={DESCRIPTIONS[index].link}>
+                        {COMPANIES[index]}
+                      </Link>
+                    </Bold>
                   </h3>
                   <Date>{DESCRIPTIONS[index].date}</Date>
                   <List>

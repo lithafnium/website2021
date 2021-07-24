@@ -1,4 +1,5 @@
 import React from "react";
+import { Bold, Link } from "@app/styles/styles";
 import { Container, ContainerInner, Project, TechStack } from "./styles";
 import { PROJECTS } from "./constants";
 const Home = () => {
@@ -8,7 +9,11 @@ const Home = () => {
         <h1>projects</h1>
         <p>
           a short collection of what I've done and what I've been working on.
-          checkout my <span>Github</span> for more info!
+          checkout my{" "}
+          <Bold>
+            <Link href="https://github.com/lithafnium">Github</Link>
+          </Bold>{" "}
+          for more info!
         </p>
         {PROJECTS.map((p) => {
           return (

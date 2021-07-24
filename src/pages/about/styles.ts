@@ -58,8 +58,3 @@ export const Image = styled.img`
   border-radius: 5px;
   box-shadow: rgba(2, 12, 27, 0.6) 0px 10px 30px -15px;
 `;
-
-export const Bold = styled.span`
-  font-weight: 600;
-  color: ${colors.HIGHLIGHT};
-`;

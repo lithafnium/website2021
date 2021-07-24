@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { colors } from "@app/styles/styles";
+import { colors, Bold } from "@app/styles/styles";
 import { FadeIn } from "@app/shared/components/fade";
-import { Container, ContainerInner, Heading, Image, Bold } from "./styles";
+import { Container, ContainerInner, Heading, Image } from "./styles";
 import Profile from "@app/assets/websitepic-4.jpg";
 
 const About = () => {
@@ -36,8 +36,7 @@ const About = () => {
               <p>
                 on campus, i toot my oboe in the Harvard Radcliffe Orchestra
                 while also snapping some shots for the Harvard Crimson.
-                additional hobbies include reading (checkout my{" "}
-                <Bold>summer reading list!</Bold>), playing tennis, strumming my
+                additional hobbies include reading, playing tennis, strumming my
                 guitar, and playing with my dog.
               </p>
             </div>

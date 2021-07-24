@@ -10,7 +10,7 @@ export const COMPANIES: any = [
 export const DESCRIPTIONS: any = [
   {
     role: "Software Development Engineering Intern",
-    link: "google.com",
+    link: "https://www.amazon.com/",
     date: "June 2021 - Present",
     description: [
       "Developed public REST API for resource tagging for Amazon Connect, AWS’s cloud call center, designed to be shipped to hundreds of thousands of customers by September.",
@@ -20,7 +20,7 @@ export const DESCRIPTIONS: any = [
   },
   {
     role: "Software Engineering Intern",
-    link: "google.com",
+    link: "https://www.fractal.co/",
     date: "Jan 2021 - May 2021",
     description: [
       "Created testing infrastructure with ~10x fewer bugs to ensure quality software using Jest, React-Testing-Library, and Enzyme, complete with Github Actions workflows.",
@@ -30,7 +30,7 @@ export const DESCRIPTIONS: any = [
   },
   {
     role: "Software Engineering Intern",
-    link: "google.com",
+    link: "https://www.pineparkhealth.com/",
     date: "June 2020 - Sept 2020",
     description: [
       "Created frontend UI elements to display user tasks and patient symptoms, increasing productivity and ensuring patient safety using Vue.js for Toggbook, an application aimed at managing medical staff in assisted living communities.",
@@ -39,7 +39,7 @@ export const DESCRIPTIONS: any = [
   },
   {
     role: "Co-Founder and Technology Co-Lead",
-    link: "google.com",
+    link: "https://www.wavelf.org/",
     date: "June 2020 - July 2021",
     description: [
       "Co-Founded Wave Learning Festival, an online learning platform aimed to bridge the gap in academic disparity through free tutoring and online seminars. ",
@@ -49,7 +49,7 @@ export const DESCRIPTIONS: any = [
   },
   {
     role: "Full-Stack Engineer",
-    link: "google.com",
+    link: "https://www.hsa.dev/",
     date: "Dec 2019 - May 2020",
     description: [
       "Designed buyer and deliverer mobile applications for Hopp, a snack delivery service for college students on campus.",
@@ -59,12 +59,11 @@ export const DESCRIPTIONS: any = [
   },
   {
     role: "Tech Lead",
-    link: "google.com",
+    link: "https://theconcordium.org/",
     date: "Dec 2019 - May 2020",
     description: [
-      "Developed public REST API for resource tagging for Amazon Connect, AWS’s cloud call center, designed to be shipped to hundreds of thousands of customers by September.",
-      "Implemented access control support using tagging through IAM roles, allowing for resource allocation and user restriction.",
-      "Debugged production code and wrote unit/integration tests required for CI/CD pipelines to maintain AWS cloud resources.",
+      "Developed a video calling platform designed to connect thousands of users with student volunteers.",
+      "Designed full-user dashboard using React.js, created backend for video conferencing and storing information using Twilio and Firebase.",
     ],
   },
 ];
