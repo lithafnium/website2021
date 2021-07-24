@@ -5,10 +5,10 @@ const Home = () => {
   return (
     <Container>
       <ContainerInner>
-        <h1>Projects</h1>
+        <h1>projects</h1>
         <p>
-          A short collection of what I've done and what I've been working on.
-          Checkout my
+          a short collection of what I've done and what I've been working on.
+          checkout my
           <span>Github</span> for more info!
         </p>
         {PROJECTS.map((p) => {

@@ -10,7 +10,7 @@ export const PROJECTS = [
     techStack: ["C++", "Bash"],
   },
   {
-    title: "Spotfy Curator",
+    title: "ML-Based Spotify Curator",
     description:
       "Devised a song preference predictor by analyzing playlists  \
             and liked songs on Spotify. Utilized a random forest classifier \
@@ -19,7 +19,7 @@ export const PROJECTS = [
             75% accuracy. Model training and predictions are stored in a \
             distributed task queue and picked up asynchronously by Celery \
             workers. Redis serves as both a message broker and result store \
-            for the queue.",
+            for the queue. Made in collaboration with Jeremy Hsu",
     techStack: [
       "Python",
       "Flask",
