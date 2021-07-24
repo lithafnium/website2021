@@ -8,8 +8,7 @@ const Home = () => {
         <h1>projects</h1>
         <p>
           a short collection of what I've done and what I've been working on.
-          checkout my
-          <span>Github</span> for more info!
+          checkout my <span>Github</span> for more info!
         </p>
         {PROJECTS.map((p) => {
           return (
