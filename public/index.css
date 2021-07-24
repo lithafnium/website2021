@@ -10,7 +10,9 @@
 
 html,
 body {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
   margin: 0px !important;
   /* background-color: #fff6e9; */
 }
