@@ -42,7 +42,7 @@ export const Heading = styled.h1`
 
 export const Description = styled.p`
   font-family: ${fonts.SECONDARY};
-  font-size: 18px;
+  font-size: 17px;
   margin: 0px;
   margin-bottom: 1em;
   color: ${colors.HIGHLIGHT};
@@ -50,7 +50,7 @@ export const Description = styled.p`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 18px;
+  font-size: 17px;
   margin: 0px;
   color: #1e3d59;
   line-height: 1.3;

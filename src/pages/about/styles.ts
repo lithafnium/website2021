@@ -31,12 +31,13 @@ export const Heading = styled.div`
 export const ContainerInner = styled.div`
   width: 100%;
   & h2 {
+    margin-top: 0px;
     color: ${colors.DARK};
   }
   & p {
     color: ${colors.DARK};
     line-height: 1.4;
-    font-size: 18px;
+    font-size: 17px;
     opacity: 0.9;
   }
   @media ${device.mobileS} {

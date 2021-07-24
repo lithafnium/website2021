@@ -28,7 +28,7 @@ export const ContainerInner = styled.div`
   }
 
   & p {
-    font-size: 18px;
+    font-size: 17px;
     color: ${colors.DARK};
   }
 
