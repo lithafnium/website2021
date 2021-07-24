@@ -45,10 +45,14 @@ export const Tabs = styled.div`
   position: relative;
   @media ${device.mobileS} {
     width: calc(100% + 50px);
+    padding-left: 25px;
+    margin-left: -25px;
     display: flex;
     overflow-x: scroll;
   }
   @media ${device.tabletL} {
+    padding: 0px;
+    margin: 0px;
     width: max-content;
     overflow-x: inherit;
     display: block;
@@ -98,6 +102,7 @@ export const ActiveLine = styled.div<{
 }>`
   @media ${device.mobileS} {
     width: 150px;
+    margin-left: 25px;
     height: 2px;
     bottom: 0px;
     left: 0px;
@@ -105,6 +110,7 @@ export const ActiveLine = styled.div<{
   }
   @media ${device.tabletL} {
     width: 2px;
+    margin: 0px;
     height: 55px;
     top: 0px;
     left: 0px;
