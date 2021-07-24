@@ -13,7 +13,7 @@ export const Container = styled.div`
 `;
 
 export const ContainerInner = styled.div`
-  max-width: 1024px;
+  max-width: 992px;
 
   @media ${device.mobileS} {
     box-sizing: border-box;

@@ -11,9 +11,9 @@ import {
 
 const Home = () => {
   return (
-    <FadeIn>
-      <Container>
-        <ContainerInner>
+    <Container>
+      <ContainerInner>
+        <FadeIn>
           <Description>hi, my name is</Description>
           <Heading>steve li.</Heading>
           <Heading style={{ opacity: "0.7" }}>
@@ -22,7 +22,7 @@ const Home = () => {
           <Paragraph>
             i'm a software engineer hoping to make an impact on this world,
             specializing in creating, desigining, and deploying exceptional
-            digital experiences. currently I'm working at Amazon on the AWS
+            digital experiences. currently i'm working at Amazon on the AWS
             Connect team.
           </Paragraph>
           <Links>
@@ -31,9 +31,9 @@ const Home = () => {
             <a href="#">projects</a>
             <a href="#">coursework</a>
           </Links>
-        </ContainerInner>
-      </Container>
-    </FadeIn>
+        </FadeIn>
+      </ContainerInner>
+    </Container>
   );
 };
 

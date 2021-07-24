@@ -22,7 +22,7 @@ export const FadeIn = (props: { children: JSX.Element | JSX.Element[] }) => {
     from: { opacity: 0 },
     to: { opacity: 1 },
     config: {
-      tension: 80,
+      tension: 150,
     },
   });
   return (

@@ -16,7 +16,7 @@ const About = () => {
               <h2>hey!</h2>
               <p>
                 i'm steve, currently a rising sophomore-ish at harvard
-                university. most of my interests lie in
+                university studying CS + stat. most of my interests lie in
                 <Bold> full-stack development </Bold>
                 and <Bold>dev-ops integrations</Bold>, but recently i've been
                 researching more into systems and computer vision on the side.{" "}

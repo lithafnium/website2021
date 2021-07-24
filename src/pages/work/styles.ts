@@ -7,12 +7,12 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20em;
+  margin-bottom: 5em;
 `;
 
 export const ContainerInner = styled.div`
   position: relative;
-  max-width: 1024px;
+  max-width: 992px;
   @media ${device.mobileS} {
     box-sizing: border-box;
     width: 80%;

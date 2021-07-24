@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 export const Heading = styled.div`
   position: relative;
-  max-width: 1024px;
+  max-width: 992px;
   @media ${device.mobileS} {
     box-sizing: border-box;
     width: 80%;

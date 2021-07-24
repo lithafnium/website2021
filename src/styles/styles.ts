@@ -4,6 +4,8 @@ export const colors = {
   TERNARY: "#FFF6E9",
   DARK: "#1e3d59",
   HIGHLIGHT: "#17BEBB",
+  // HIGHLIGHT: "#41B49D",
+  // HIGHLIGHT: "#F46672",
 };
 
 export const fonts = {
