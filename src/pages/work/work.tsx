@@ -23,7 +23,7 @@ const Work = () => {
     <>
       <Container>
         <ContainerInner>
-          <h2>work experience</h2>
+          <h1>work experience</h1>
           <WorkContainer>
             <Tabs>
               {COMPANIES.map((w: any, i: any) => (

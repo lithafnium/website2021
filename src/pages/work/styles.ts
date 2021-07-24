@@ -23,7 +23,7 @@ export const ContainerInner = styled.div`
     width: 100%;
   }
 
-  & h2 {
+  & h1 {
     color: ${colors.DARK};
   }
 `;

@@ -54,7 +54,6 @@ export const Paragraph = styled.p`
   margin: 0px;
   color: #1e3d59;
   line-height: 1.3;
-  letter-spacing: 0.05em;
   margin-top: 1em;
 `;
 
