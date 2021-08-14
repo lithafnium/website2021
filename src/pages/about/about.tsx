@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { colors, Bold } from "@app/styles/styles";
-import { FadeIn } from "@app/shared/components/fade";
+import React from "react";
+import { Bold, Link } from "@app/styles/styles";
 import { Container, ContainerInner, Heading, Image } from "./styles";
 import Profile from "@app/assets/websitepic-4.jpg";
 
@@ -26,12 +25,27 @@ const About = () => {
                 </Bold>
               </p>
               <p>
-                over the past few years i've had the opportunity to work in
-                <Bold> startups</Bold>, found a <Bold>non-profit</Bold> of my
-                own, develop technologies at a <Bold>huge corporation</Bold>,
-                and work in an <Bold>app development agency.</Bold> right now
-                i'm developing technologies at <Bold>Amazon</Bold> on the AWS
-                Connect Team.
+                over the past few years, i've had the opportunity to work in
+                <Bold>
+                  {" "}
+                  <Link href="https://www.fractal.co/">startups</Link>
+                </Bold>
+                , found a{" "}
+                <Bold>
+                  <Link href="https://www.wavelf.org/">non-profit</Link>
+                </Bold>{" "}
+                of my own, engineer public-facing APIs at a{" "}
+                <Bold>
+                  <Link href="https://www.amazon.com/">huge corporation</Link>
+                </Bold>
+                , and create full-stack applications in an{" "}
+                <Bold>
+                  <Link href="https://www.hsa.dev/">
+                    app development agency.
+                  </Link>
+                </Bold>{" "}
+                right now i'm developing technologies at <Bold>Amazon</Bold> on
+                the AWS Connect Team.
               </p>
               <p>
                 on campus, i toot my oboe in the Harvard Radcliffe Orchestra
