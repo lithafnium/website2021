@@ -6,7 +6,7 @@ import Profile from "@app/assets/websitepic-4.jpg";
 const About = () => {
   return (
     <>
-      <Container>
+      <Container id="about">
         <Heading>
           <h1>about me</h1>
           <ContainerInner>

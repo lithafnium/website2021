@@ -26,10 +26,10 @@ const Home = () => {
             Connect team.
           </Paragraph>
           <Links>
-            <a href="#">about</a>
-            <a href="#">work experience</a>
-            <a href="#">projects</a>
-            <a href="#">coursework</a>
+            <a href="#about">about</a>
+            <a href="#work">work experience</a>
+            <a href="#projects">projects</a>
+            <a href="#coursework">coursework</a>
           </Links>
         </FadeIn>
       </ContainerInner>

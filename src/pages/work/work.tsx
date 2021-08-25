@@ -21,7 +21,7 @@ const Work = () => {
 
   return (
     <>
-      <Container>
+      <Container id="work">
         <ContainerInner>
           <h1>work experience</h1>
           <WorkContainer>

@@ -4,7 +4,7 @@ import { Container, ContainerInner, Project, TechStack } from "./styles";
 import { PROJECTS } from "./constants";
 const Home = () => {
   return (
-    <Container>
+    <Container id="projects">
       <ContainerInner>
         <h1>projects</h1>
         <p>
