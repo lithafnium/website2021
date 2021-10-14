@@ -13,6 +13,10 @@ const Home = () => {
           <Bold>
             <Link href="https://github.com/lithafnium">Github</Link>
           </Bold>{" "}
+          or{" "}
+          <Bold>
+            <Link href="/assets/resume.pdf">Resume</Link>
+          </Bold>{" "}
           for more info!
         </p>
         {PROJECTS.map((p) => {
