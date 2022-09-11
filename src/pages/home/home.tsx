@@ -22,8 +22,7 @@ const Home = () => {
           <Paragraph>
             i'm a software engineer hoping to make an impact on this world,
             specializing in creating, desigining, and deploying exceptional
-            digital experiences. currently i'm working at Amazon on the AWS
-            Connect team.
+            digital experiences. currently beep booping at Berkely NLP.
           </Paragraph>
           <Links>
             <a href="#about">about</a>
