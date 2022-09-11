@@ -14,14 +14,15 @@ const About = () => {
             <div>
               <h2>hey!</h2>
               <p>
-                i'm steve, currently a rising sophomore-ish at harvard
-                university studying CS + stat. most of my interests lie in
+                i'm steve, currently a junior at harvard university studying CS
+                + stat. most of my interests lie in
                 <Bold> full-stack development </Bold>
-                and <Bold>dev-ops integrations</Bold>, but recently i've been
-                researching more into systems and computer vision on the side.{" "}
+                and <Bold>nautral language processing</Bold>, but recently i've
+                been researching more into systems and computer vision on the
+                side.{" "}
                 <Bold>
                   i'm currently seeking a SWE intern position for this fall or
-                  the summer of 2022, in addition to any available research.
+                  the summer of 2023, in addition to any available research.
                 </Bold>
               </p>
               <p>
@@ -44,8 +45,9 @@ const About = () => {
                     app development agency.
                   </Link>
                 </Bold>{" "}
-                right now i'm developing technologies at <Bold>Amazon</Bold> on
-                the AWS Connect Team.
+                most recently I was on Instgram on the Entity Quality Platform
+                team, building out core ML infrastructure for filtering out
+                instagram entities.
               </p>
               <p>
                 on campus, i toot my oboe in the Harvard Radcliffe Orchestra
