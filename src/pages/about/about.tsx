@@ -17,7 +17,7 @@ const About = () => {
                 i'm steve, currently a junior at harvard university studying CS
                 + stat. most of my interests lie in
                 <Bold> full-stack development </Bold>
-                and <Bold>nautral language processing</Bold>, but recently i've
+                and <Bold>natural language processing</Bold>, but recently i've
                 been researching more into systems and computer vision on the
                 side.{" "}
                 <Bold>

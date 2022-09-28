@@ -1,13 +1,15 @@
 export const PROJECTS = [
   {
-    title: "WeensyOS",
+    title: "ChickadeeOS",
     description:
-      "Designed a kernel for WeensyOS, a miniature operating system \
-    complete with physical and virtual memory, forking, and kernel \
-    isolation. Implemented virtual page allocation and memory freeing \
-    while accounting for memory leaks and system calls. Created for CS \
-    61 in Fall of 2019.",
-    techStack: ["C++", "Bash"],
+      "ChickadeeOS is a multicore x86-64 operating system that that supports syscalls, multithreading, and virtual memory. Includes caching, synchronization objects such as spinlocks and futexes, a virtual file system, and an on-disk file system with directory trees. Created for CS161: Operating Systems",
+    techStack: ["C++"],
+  },
+  {
+    title: "Wikipedia Topic Modeling",
+    description:
+      "Designed a topic visualizer for Wikipedia articles using Top2Vec and transformer-based NLP models trained on multilingual data. Created flask backend and typescript graph editor tool for visualization",
+    techStack: ["Python", "Flask", "transformers"],
   },
   {
     title: "ML-Based Spotify Curator",

@@ -21,8 +21,8 @@ const Home = () => {
           </Heading>
           <Paragraph>
             i'm a software engineer hoping to make an impact on this world,
-            specializing in creating, desigining, and deploying exceptional
-            digital experiences. currently beep booping at Berkely NLP.
+            specializing in creating, designing, and deploying exceptional
+            digital experiences. currently beep booping at Berkeley NLP.
           </Paragraph>
           <Links>
             <a href="#about">about</a>
