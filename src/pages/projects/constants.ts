@@ -1,5 +1,17 @@
 export const PROJECTS = [
   {
+    title: "Wave Learning Festival ",
+    description: `Built frontend React.js app with e2e testing used by over 10000 students worldwide in more than 60 countries. Redesigned technical workflow by creating CI/CD infrastructure on AWS Amplify servers with DynamoDB Backend, S3 storage, Lambda function deployments, and GraphQL. Check it out at www.wavelf.org!`,
+    techStack: [
+      "React",
+      "AWS DynamoDB",
+      "AWS Cognito",
+      "AWS Amplify",
+      "Lambda",
+      "GraphQL",
+    ],
+  },
+  {
     title: "ChickadeeOS",
     description:
       "ChickadeeOS is a multicore x86-64 operating system that that supports syscalls, multithreading, and virtual memory. Includes caching, synchronization objects such as spinlocks and futexes, a virtual file system, and an on-disk file system with directory trees. Created for CS161: Operating Systems",
