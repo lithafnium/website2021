@@ -17,43 +17,43 @@ import VisibilitySensor from "react-visibility-sensor";
  */
 export const SlideIn = (props: { children: JSX.Element; left: boolean }) => {
   const [once, setOnce] = useState(false);
-  return (
-    <VisibilitySensor>
-      {({ isVisible }) => {
-        if (isVisible) {
-          setOnce(true);
-        }
-        return (
-          <div {...props}>
-            <div>
-              <Spring
-                config={{ tension: 100 }}
-                from={{
-                  transform: props.left
-                    ? "translateX(-200%)"
-                    : "translateX(200%)",
-                }}
-                to={{
-                  transform:
-                    isVisible || once
-                      ? "translateX(0)"
-                      : props.left
-                      ? "translateX(-200%)"
-                      : "translateX(200%)",
-                }}
-              >
-                {(transform) => {
-                  return (
-                    <animated.div style={transform}>
-                      {props.children}
-                    </animated.div>
-                  );
-                }}
-              </Spring>
-            </div>
-          </div>
-        );
-      }}
-    </VisibilitySensor>
-  );
+  return <div></div>;
+  // return (
+  //   <VisibilitySensor>
+  //     {({ isVisible }) => {
+  //       if (isVisible) {
+  //         setOnce(true);
+  //       }
+  //       return (
+  //         <div {...props}>
+  //           <div>
+  //             <Spring
+  //               config={{ tension: 100 }}
+  //               from={{
+  //                 transform: props.left
+  //                   ? "translateX(-200%)"
+  //                   : "translateX(200%)",
+  //               }}
+  //               to={{
+  //                 transform:
+  //                   isVisible || once
+  //                     ? "translateX(0)"
+  //                     : props.left
+  //                     ? "translateX(-200%)"
+  //                     : "translateX(200%)",
+  //               }}
+  //             >
+  //               {(transform) => {
+  //                 return (
+  //                   <animated.div style={transform}>
+  //                     {props.children}
+  //                   </animated.div>
+  //                 );
+  //               }}
+  //             </Spring>
+  //           </div>
+  //         </div>
+  //       );
+  //     }}
+  //   </VisibilitySensor>
 };
