@@ -43,10 +43,10 @@ li {
     width: 80%;
   }
 
-  @media (min-width: 1200px) {
+  /* @media (min-width: 1200px) {
     padding: 0px 0px;
     width: 100%;
-  }
+  } */
 }
 
 .italics {

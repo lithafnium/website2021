@@ -14,14 +14,14 @@ const About = () => {
             <div>
               <h2>hey!</h2>
               <p>
-                i'm steve, currently a junior at harvard university studying CS
+                i'm steve, currently a senior at harvard university studying CS
                 + stat. most of my interests lie in
-                <Bold> full-stack development </Bold>
-                and <Bold>natural language processing</Bold>, but recently i've
-                been researching more into systems and computer vision on the
-                side.{" "}
+                <Bold> systems</Bold>, <Bold>natural language processing</Bold>,{" "}
+                <Bold>speech recognition systems, and signal processing</Bold>,
+                but recently i've been researching more into fullstack
+                development and distributed systems on the side.{" "}
                 <Bold>
-                  i'm currently seeking a SWE intern position for this fall or
+                  i'm currently seeking a SWE fulltime position for this fall or
                   the summer of 2023, in addition to any available research.
                 </Bold>
               </p>

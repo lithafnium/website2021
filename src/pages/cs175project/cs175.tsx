@@ -461,7 +461,7 @@ const CS175 = () => {
               <li>
                 Mouse camera movement:
                 <a href="https://gist.github.com/KarlRamstedt/407d50725c7b6abeaf43aee802fdd88e">
-                  https://gist.github.com/KarlRamstedt/407d50725c7b6abeaf43aee802fdd88e
+                  Github link
                 </a>
               </li>
             </ul>
