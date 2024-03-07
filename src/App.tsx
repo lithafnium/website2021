@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Home from "@app/pages/home/home";
 import About from "@app/pages/about/about";
@@ -8,15 +8,56 @@ import Projects from "@app/pages/projects/projects";
 import CS175 from "@app/pages/cs175project/cs175";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Router } from "react-router";
+import { Container, Heading, Navbar, NavbarOptions } from "./styles";
+import { animated, useTransition } from "react-spring";
 
 const Main = () => {
+  const [items, setItems] = useState([<About />]);
+  const setContent = (index: number) => {
+    if (index == 0) {
+      setItems([<About />]);
+    } else if (index == 1) {
+      setItems([<Work />]);
+    } else {
+      setItems([<Projects />]);
+    }
+  };
+  const transitions = useTransition(items, {
+    from: { x: -20, opacity: 0 },
+    enter: { x: 0, y: 0, opacity: 1 },
+    leave: { y: 20, opacity: 0 },
+    // delay: 50,
+    config: {
+      mass: 10,
+      friction: 50,
+      tension: 100,
+      duration: 200,
+    },
+    exitBeforeEnter: true,
+  });
   return (
-    <>
-      <Home />
-      <About />
-      <Work />
-      <Projects />
-    </>
+    <Container>
+      <Heading>
+        <Navbar>
+          <h2 onClick={() => setContent(0)}>hi, i'm steve</h2>
+          <NavbarOptions>
+            <p onClick={() => setContent(1)}>work</p>
+            <p onClick={() => setContent(2)}>projects</p>
+          </NavbarOptions>
+        </Navbar>
+        {transitions((style, item, t, index) => {
+          return (
+            <animated.div
+              style={{
+                ...style,
+              }}
+            >
+              {item}
+            </animated.div>
+          );
+        })}
+      </Heading>
+    </Container>
   );
 };
 const router = createBrowserRouter([

@@ -14,6 +14,7 @@
     "snowpack": "^3.0.1"
   },
   "dependencies": {
+    "@react-spring/rafz": "^9.7.3",
     "@snowpack/plugin-typescript": "^1.2.1",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
@@ -34,8 +35,9 @@
     "prettier": "2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^5.0.1",
     "react-router-dom": "^6.11.1",
-    "react-spring": "^9.1.1",
+    "react-spring": "^9.7.3",
     "react-visibility-sensor": "^5.1.1",
     "snowpack": "^3.0.1",
     "styled-components": "^5.2.3",

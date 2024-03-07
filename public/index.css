@@ -17,12 +17,17 @@ body {
   /* background-color: #fff6e9; */
 }
 
+body {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
 p {
-  line-height: 1.5;
+  line-height: 1.75rem;
 }
 
 li {
-  line-height: 1.5;
+  line-height: 1.75rem;
 }
 
 .container {
@@ -55,7 +60,6 @@ li {
 
 .bold {
   font-weight: bold;
-  ;
 }
 
 .image-grid {

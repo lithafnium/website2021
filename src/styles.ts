@@ -1,11 +1,25 @@
 import { device, size } from "@app/shared/components/layout/layout";
-import { colors, grayscale } from "@app/styles/styles";
+
 import styled from "styled-components";
+import { grayscale } from "./styles/styles";
+
+export const Container = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5em;
+`;
 
 export const Heading = styled.div`
   position: relative;
   max-width: ${size.tablet};
   width: 100%;
+  @media ${device.mobileS} {
+    box-sizing: border-box;
+    width: 80%;
+  }
 `;
 
 export const Navbar = styled.div`
@@ -13,6 +27,10 @@ export const Navbar = styled.div`
   width: 100%;
   justify-content: space-between;
   align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const NavbarOptions = styled.div`

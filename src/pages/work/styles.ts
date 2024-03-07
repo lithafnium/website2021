@@ -1,36 +1,21 @@
 import styled from "styled-components";
-import { device } from "@app/shared/components/layout/layout";
-import { colors, fonts } from "@app/styles/styles";
-
-export const Container = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5em;
-`;
+import { device, size } from "@app/shared/components/layout/layout";
+import { colors, fonts, grayscale } from "@app/styles/styles";
 
 export const ContainerInner = styled.div`
   position: relative;
-  max-width: 992px;
-  @media ${device.mobileS} {
-    box-sizing: border-box;
-    width: 80%;
-  }
-
-  @media ${device.laptopM} {
-    padding: 0px 0px;
-    width: 100%;
-  }
-
+  max-width: ${size.tablet};
+  width: 100%;
   & h1 {
-    color: ${colors.DARK};
   }
+
+  margin-top: 1em;
 `;
 
 export const WorkContainer = styled.div`
   position: relative;
   display: flex;
+  gap: 1em;
   width: 100%;
   @media ${device.mobileS} {
     flex-direction: column;
@@ -62,16 +47,16 @@ export const Tabs = styled.div`
 export const Tab = styled.button<{
   active: boolean;
 }>`
-  height: 55px;
+  height: 40px;
 
   @media ${device.mobileS} {
-    border-bottom: 2px solid #4d6e8c;
+    border-bottom: 2px solid ${grayscale[300]};
     border-left: none;
     min-width: 150px;
     justify-content: center;
   }
   @media ${device.tabletL} {
-    border-left: 2px solid #4d6e8c;
+    border-left: 2px solid ${grayscale[300]};
     border-bottom: none;
     width: 250px;
     justify-content: start;
@@ -85,8 +70,9 @@ export const Tab = styled.button<{
   display: flex;
   align-items: center;
 
-  color: ${(props) => (props.active ? colors.HIGHLIGHT : colors.DARK)};
-  font-family: ${fonts.SECONDARY};
+  color: ${(props) => (props.active ? grayscale[900] : grayscale[300])};
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
   white-space: no-wrap;
 
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -111,15 +97,15 @@ export const ActiveLine = styled.div<{
   @media ${device.tabletL} {
     width: 2px;
     margin: 0px;
-    height: 55px;
+    height: 40px;
     top: 0px;
     left: 0px;
-    transform: translateY(calc(${(props) => props.index} * 55px));
+    transform: translateY(calc(${(props) => props.index} * 40px));
   }
 
   position: absolute;
 
-  background: ${colors.HIGHLIGHT};
+  background: ${grayscale[900]};
 
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 `;
@@ -132,8 +118,7 @@ export const Content = styled.div`
     padding: 0px;
   }
   @media ${device.tabletL} {
-    padding: 16px 5px;
-    margin: 0px 0px 0px 2em;
+    margin: 0;
   }
 `;
 
@@ -143,14 +128,11 @@ export const Panel = styled.div`
   h3 {
     margin: 0px;
     font-weight: 550;
-    color: ${colors.DARK};
   }
 `;
 
 export const Date = styled.p`
   margin: 1em 0px;
-  font-family: ${fonts.SECONDARY};
-  color: ${colors.DARK};
   opacity: 0.7;
 `;
 
@@ -165,13 +147,11 @@ export const ListItem = styled.li`
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;
-  color: ${colors.DARK};
   opacity: 0.9;
-  line-height: 1.3;
+  font-size: 16px;
   &:before {
     content: "▹";
     position: absolute;
     left: 0px;
-    color: ${colors.HIGHLIGHT};
   }
 `;

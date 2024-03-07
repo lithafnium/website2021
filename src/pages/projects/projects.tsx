@@ -1,39 +1,49 @@
 import React from "react";
 import { Bold, Link } from "@app/styles/styles";
-import { Container, ContainerInner, Project, TechStack } from "./styles";
+import {
+  Bar,
+  ContainerInner,
+  Label,
+  Project,
+  ProjectHeading,
+  TechStack,
+  ProjectLink,
+} from "./styles";
 import { PROJECTS } from "./constants";
 const Home = () => {
   return (
-    <Container id="projects">
-      <ContainerInner>
-        <h1>projects</h1>
-        <p>
-          a short collection of what I've done and what I've been working on.
-          checkout my{" "}
-          <Bold>
-            <Link href="https://github.com/lithafnium">Github</Link>
-          </Bold>{" "}
-          or{" "}
-          <Bold>
-            <Link href="/assets/resume.pdf">Resume</Link>
-          </Bold>{" "}
-          for more info!
-        </p>
-        {PROJECTS.map((p) => {
-          return (
-            <Project>
+    <ContainerInner>
+      <p>
+        a collection of my past and current projects. research publications can
+        be found at my{" "}
+        <Bold>
+          <Link href="https://scholar.google.com/citations?user=84BuD6wAAAAJ&hl=en">
+            Google Scholar
+          </Link>
+        </Bold>
+      </p>
+      {PROJECTS.map((p) => {
+        return (
+          <Project>
+            <ProjectHeading>
               <h3>{p.title}</h3>
-              <p>{p.description}</p>
-              <TechStack>
-                {p.techStack.map((t) => {
-                  return <p>{t}</p>;
-                })}
-              </TechStack>
-            </Project>
-          );
-        })}
-      </ContainerInner>
-    </Container>
+              {p.link != "" && <Bar />}
+              {p.link != "" && <ProjectLink href={p.link}>paper</ProjectLink>}
+            </ProjectHeading>
+            <TechStack>
+              {p.techStack.map((t) => {
+                return (
+                  <Label>
+                    <p>{t}</p>
+                  </Label>
+                );
+              })}
+            </TechStack>
+            <p>{p.description}</p>
+          </Project>
+        );
+      })}
+    </ContainerInner>
   );
 };
 

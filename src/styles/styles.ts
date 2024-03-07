@@ -10,8 +10,21 @@ export const colors = {
   // HIGHLIGHT: "#F46672",
 };
 
+export const grayscale = {
+  "50": "rgb(243, 243, 243)",
+  "100": "rgb(239, 239, 239)",
+  "200": "rgb(223, 223, 223)",
+  "300": "rgb(202, 202, 202)",
+  "400": "rgb(168, 168, 168)",
+  "500": "rgb(122, 122, 122)",
+  "600": "rgb(88, 88, 88)",
+  "700": "rgb(63, 63, 63)",
+  "800": "rgb(43, 43, 43)",
+  "900": "rgb(35, 35, 35)",
+};
+
 export const fonts = {
-  // PRIMARY: "Montserrat, sans-serif",
+  PRIMARY: '"Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,',
   SECONDARY: '"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace',
   // PRIMARY: '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;',
   // SECONDARY: "'Poppins', sans-serif",
@@ -19,10 +32,11 @@ export const fonts = {
 
 export const Bold = styled.span`
   font-weight: 600;
-  color: ${colors.HIGHLIGHT};
+  color: ${grayscale[900]};
+  text-decoration: underline;
 `;
 
 export const Link = styled.a`
   text-decoration: none;
-  color: ${colors.HIGHLIGHT};
+  color: ${grayscale[900]};
 `;

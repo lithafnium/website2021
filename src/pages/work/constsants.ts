@@ -1,4 +1,5 @@
 export const COMPANIES: any = [
+  "Roblox",
   "Instagram (Meta)",
   "Gamalon",
   "Amazon",
@@ -7,6 +8,16 @@ export const COMPANIES: any = [
 ];
 
 export const DESCRIPTIONS: any = [
+  {
+    role: "Software Engineer Intern ",
+    link: "https://www.roblox.com/",
+    date: "May 2023 - August 2023",
+    description: [
+      "Developed P0 abuse reporting features for users in lua: allowing users to attach screenshots to abuse reports, locating advertisements using ray-tracing, and improving avatar convex-hull detection to bring report actionability from 1% to 70%.",
+      "Designed data pipelines to route Kafka events from reports to ML classifiers to support reactive reporting flow. Deployed new services using Hashicorp’s nomad scheduler to create entrypoints for reporting queues",
+      "Conducted user experiments to launch Report Anything from 20% of users to 100% of users. Current implementation of the report menu resulted in a 10% increase in user reporting usage. Work approved by VPs of Safety and currently launched to 100% of users",
+    ],
+  },
   {
     role: "Software Engineer Intern ",
     link: "https://www.instagram.com/",
