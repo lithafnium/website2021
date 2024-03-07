@@ -59,10 +59,6 @@ const About = () => {
             across the world.
           </p>
           <p>
-            currently I'm conducting independent research on AI safety tools for
-            LLMs.
-          </p>
-          <p>
             in my other lives, I'm an{" "}
             <Bold>
               <Link href="https://www.youtube.com/watch?v=NJQYvL6J7t4">
