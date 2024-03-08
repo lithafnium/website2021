@@ -4,6 +4,7 @@ import Home from "@app/pages/home/home";
 import About from "@app/pages/about/about";
 import Work from "@app/pages/work/work";
 import Projects from "@app/pages/projects/projects";
+import Misc from "@app/pages/misc/misc";
 
 import CS175 from "@app/pages/cs175project/cs175";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -12,15 +13,10 @@ import { Container, Heading, Navbar, NavbarOptions } from "./styles";
 import { animated, useTransition } from "react-spring";
 
 const Main = () => {
+  const pages = [<About />, <Work />, <Projects />, <Misc />];
   const [items, setItems] = useState([<About />]);
   const setContent = (index: number) => {
-    if (index == 0) {
-      setItems([<About />]);
-    } else if (index == 1) {
-      setItems([<Work />]);
-    } else {
-      setItems([<Projects />]);
-    }
+    setItems(pages.slice(index, index + 1));
   };
   const transitions = useTransition(items, {
     from: { x: -20, opacity: 0 },

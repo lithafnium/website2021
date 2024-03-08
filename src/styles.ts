@@ -16,7 +16,7 @@ export const Heading = styled.div`
   position: relative;
   max-width: ${size.tablet};
   width: 100%;
-  @media ${device.mobileS} {
+  @media (max-width: ${size.tablet}) {
     box-sizing: border-box;
     width: 80%;
   }
@@ -24,6 +24,7 @@ export const Heading = styled.div`
 
 export const Navbar = styled.div`
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
   align-items: center;

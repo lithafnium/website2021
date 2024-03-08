@@ -31,23 +31,9 @@ export const NavbarOptions = styled.div`
 `;
 
 export const ContainerInner = styled.div`
+  position: relative;
+  max-width: ${size.tablet};
   width: 100%;
-  & h2 {
-    margin-top: 0px;
-  }
-  & p {
-    font-size: 17px;
-    color: ${grayscale[800]};
-  }
-  @media ${device.mobileS} {
-    display: block;
-  }
-
-  @media ${device.tabletL} {
-    display: grid;
-  }
-
-  gap: 50px;
 `;
 
 export const Image = styled.img`
@@ -85,7 +71,7 @@ export const SocialLink = styled.a`
 `;
 
 export const Bar = styled.div`
-  width: 40px;
+  width: 20px;
   height: 1px;
   background-color: ${grayscale[300]};
 `;

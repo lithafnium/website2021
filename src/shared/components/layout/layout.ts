@@ -4,7 +4,7 @@ export const size = {
   mobileS: "320px",
   mobileM: "375px",
   mobileL: "425px",
-  tablet: "768px",
+  tablet: "700px",
   tabletL: "992px",
   laptop: "1024px",
   laptopM: "1200px",
