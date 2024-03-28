@@ -8,6 +8,7 @@ import {
   ProjectHeading,
   TechStack,
   ProjectLink,
+  Description,
 } from "./styles";
 import { PROJECTS } from "./constants";
 const Home = () => {
@@ -39,7 +40,9 @@ const Home = () => {
                 );
               })}
             </TechStack>
-            <p>{p.description}</p>
+            <Description style={{ marginBottom: "0px" }}>
+              {p.description}
+            </Description>
           </Project>
         );
       })}
