@@ -35,7 +35,7 @@ const Main = () => {
     <Container>
       <Heading>
         <Navbar>
-          <h2 onClick={() => setContent(0)}>hi, i'm steve</h2>
+          <h2 onClick={() => setContent(0)}>hi, i'm steve li</h2>
           <NavbarOptions>
             <p onClick={() => setContent(1)}>work</p>
             <p onClick={() => setContent(2)}>projects</p>
