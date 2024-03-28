@@ -88,3 +88,8 @@ li {
   flex-direction: column;
   align-items: center;
 }
+
+.hidden {
+  opacity: 1;
+  color: white;
+}
