@@ -11,7 +11,7 @@ export const ContainerInner = styled.div`
 export const Project = styled.div`
   width: 100%;
   margin-bottom: 1.5em;
-  padding: 1em;
+  padding: 1.5em;
   box-sizing: border-box;
   border: 1px solid ${grayscale[200]};
   border-radius: 2px;
