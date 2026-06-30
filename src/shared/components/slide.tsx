@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { animated, Spring } from "react-spring";
-import VisibilitySensor from "react-visibility-sensor";
 
 /**
  * Wraps around child elements and applies a slide in animation, either from the left

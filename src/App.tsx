@@ -1,24 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
 
-import Home from "@app/pages/home/home";
 import About from "@app/pages/about/about";
-import Work from "@app/pages/work/work";
 import Projects from "@app/pages/projects/projects";
-import Misc from "@app/pages/misc/misc";
 
 import CS175 from "@app/pages/cs175project/cs175";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Router } from "react-router";
+import Blog from "@app/pages/blog/blog";
+import BlogPost from "@app/pages/blog/post";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 import { Container, Heading, Navbar, NavbarOptions } from "./styles";
 import { animated, useTransition } from "react-spring";
 
+const tabForPath = (pathname: string): number => {
+  if (pathname === "/projects") return 1;
+  if (pathname === "/blog") return 2;
+  return 0;
+};
+
 const Main = () => {
-  const pages = [<About />, <Work />, <Projects />, <Misc />];
-  const [items, setItems] = useState([<About />]);
-  const setContent = (index: number) => {
-    setItems(pages.slice(index, index + 1));
-  };
-  const transitions = useTransition(items, {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const pages = [<About />, <Projects />, <Blog />];
+  const tab = tabForPath(location.pathname);
+  const transitions = useTransition(tab, {
+    keys: tab,
     from: { x: -20, opacity: 0 },
     enter: { x: 0, y: 0, opacity: 1 },
     leave: { y: 20, opacity: 0 },
@@ -35,20 +44,20 @@ const Main = () => {
     <Container>
       <Heading>
         <Navbar>
-          <h2 onClick={() => setContent(0)}>hi, i'm steve li</h2>
+          <h2 onClick={() => navigate("/")}>hi, i'm steve li</h2>
           <NavbarOptions>
-            <p onClick={() => setContent(1)}>work</p>
-            <p onClick={() => setContent(2)}>projects</p>
+            <p onClick={() => navigate("/projects")}>projects</p>
+            <p onClick={() => navigate("/blog")}>blog</p>
           </NavbarOptions>
         </Navbar>
-        {transitions((style, item, t, index) => {
+        {transitions((style, t) => {
           return (
             <animated.div
               style={{
                 ...style,
               }}
             >
-              {item}
+              {pages[t] ?? pages[0]}
             </animated.div>
           );
         })}
@@ -61,6 +70,18 @@ const router = createBrowserRouter([
     path: "/cs175",
     element: <CS175 />,
     children: [],
+  },
+  {
+    path: "/projects",
+    element: <Main />,
+  },
+  {
+    path: "/blog",
+    element: <Main />,
+  },
+  {
+    path: "/blog/:slug",
+    element: <BlogPost />,
   },
   {
     path: "/",
