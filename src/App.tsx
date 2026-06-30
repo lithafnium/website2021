@@ -13,7 +13,7 @@ import {
   useNavigate,
 } from "react-router-dom";
 import { Container, Heading, Navbar, NavbarOptions } from "./styles";
-import { animated, useTransition } from "react-spring";
+import { animated, useTransition } from "@react-spring/web";
 
 const tabForPath = (pathname: string): number => {
   if (pathname === "/projects") return 1;

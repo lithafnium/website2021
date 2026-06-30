@@ -1,5 +1,5 @@
 import React, { Children, useEffect } from "react";
-import { useTrail, animated } from "react-spring";
+import { useTrail, animated } from "@react-spring/web";
 
 export const FadeIn = (props: { children: JSX.Element | JSX.Element[] }) => {
   /*

@@ -18,7 +18,7 @@ import { FaGithub, FaTwitter } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import Work from "@app/pages/work/work";
 import Projects from "@app/pages/projects/projects";
-import { animated, useTransition } from "react-spring";
+import { animated, useTransition } from "@react-spring/web";
 
 const About = () => {
   return (
