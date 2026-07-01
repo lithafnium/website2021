@@ -7,6 +7,7 @@ export interface PostMeta {
   title: string;
   date: string;
   description: string;
+  image: string;
 }
 
 export interface Post extends PostMeta {
@@ -46,11 +47,21 @@ export const posts: Post[] = Object.entries(modules)
   .map(([path, raw]) => {
     const { meta, body } = parseFrontmatter(raw);
     const slug = slugFromPath(path);
+
+    // Header image is required for every post. Fail loudly at build time
+    // (and in dev) so a post can never ship without one.
+    if (!meta.image) {
+      throw new Error(
+        `Blog post "${slug}" (${path}) is missing the required "image" frontmatter field.`
+      );
+    }
+
     return {
       slug,
       title: meta.title ?? slug,
       date: meta.date ?? "",
       description: meta.description ?? "",
+      image: meta.image,
       body,
     };
   })

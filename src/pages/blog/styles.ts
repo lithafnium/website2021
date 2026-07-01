@@ -187,3 +187,12 @@ export const PostTitle = styled.h1`
   color: ${grayscale[900]};
   margin: 0.4em 0 0.6em 0;
 `;
+
+export const HeaderImage = styled.img`
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 1.5em;
+  display: block;
+`;

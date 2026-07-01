@@ -10,6 +10,7 @@ import {
   Article,
   Container,
   Heading,
+  HeaderImage,
   Navbar,
   NavbarOptions,
   PostMetaDate,
@@ -51,6 +52,7 @@ const BlogPost = () => {
         </Navbar>
         {post ? (
           <FadeIn>
+            <HeaderImage src={post.image} alt={post.title} />
             <PostTitle>{post.title}</PostTitle>
             <PostMetaDate>{formatDate(post.date)}</PostMetaDate>
             <Article>
