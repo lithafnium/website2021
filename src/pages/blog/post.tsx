@@ -4,7 +4,6 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import rehypePrism from "rehype-prism-plus";
-import { FadeIn } from "@app/shared/components/fade";
 import { getPost } from "@app/blog/posts";
 import {
   Article,
@@ -51,7 +50,7 @@ const BlogPost = () => {
           </NavbarOptions>
         </Navbar>
         {post ? (
-          <FadeIn>
+          <>
             <HeaderImage src={post.image} alt={post.title} />
             <PostTitle>{post.title}</PostTitle>
             <PostMetaDate>{formatDate(post.date)}</PostMetaDate>
@@ -66,7 +65,7 @@ const BlogPost = () => {
                 {post.body}
               </ReactMarkdown>
             </Article>
-          </FadeIn>
+          </>
         ) : (
           <p>post not found.</p>
         )}
